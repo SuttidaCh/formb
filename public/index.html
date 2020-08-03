@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>ฟอร์มใบสั่ง</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/form-validation.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <i class="fas fa-bullhorn fa-7x " style="color: #000000 ;"></i>
+      <p><br></p>
+      <h2>ใบสั่งเจ้าพนักงานจราจรหรือพนักงานเจ้าหน้าที่</h2>
+    </div>
+
+    <div class="container">
+      <form class="needs-validation">
+        <label>เลขที่ใบสั่ง 99999999999</label><br>
+        <label>ด้วยผู้ขับขี่</label>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="drive" id="drive" required /> รถจักรยานยนต์ </div>
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="drive" id="drive" required /> รถยนต์นั่งส่วนบุคคล</div>
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="drive" id="drive" required /> รถประเภทอื่น</div>
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="drive" id="drive" required /> รถขนส่ง</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="cars">ยี่ห้อ</label>
+            <select name="cars" id="cars" class="form-control">
+              <option value="toyota">toyota</option>
+              <option value="honda">honda</option>
+              <option value="volvo">volvo</option>
+              <option value="saab">saab</option>
+              <option value="opel">opel</option>
+              <option value="audi">audi</option>
+            </select>
+            <div class="invalid-feedback">
+              กรุณาเลือกยี่ห้อรถ
+            </div>
+          </div>
+
+          <div class="col-md-5 mb-3">
+            <input type="radio" name="country0" required /> กรุงเทพมหานคร
+            <br>
+            <input type="radio" name="country0" required /> จังหวัด
+            <select name="country0" id="country0" class="form-control">
+              <option value="เชียงราย">เชียงราย</option>
+              <option value="เชียงใหม่">เชียงใหม่</option>
+              <option value="น่าน">น่าน</option>
+              <option value="พะเยา">พะเยา</option>
+              <option value="แพร่">แพร่</option>
+              <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+              <option value="ลำปาง ">ลำปาง</option>
+              <option value="ลำพูน ">ลำพูน</option>
+              <option value="อุตรดิตถ์ ">อุตรดิตถ์</option>
+              <option value="กาฬสินธุ์ ">กาฬสินธุ์</option>
+              <option value="ขอนแก่น ">ขอนแก่น</option>
+              <option value="ชัยภูมิ ">ชัยภูมิ</option>
+              <option value="นครพนม ">นครพนม</option>
+              <option value="นครราชสีมา ">นครราชสีมา</option>
+              <option value="บึงกาฬ">บึงกาฬ</option>
+              <option value="บุรีรัมย์">บุรีรัมย์</option>
+              <option value="มหาสารคาม ">มหาสารคาม</option>
+              <option value="มุกดาหาร"> มุกดาหาร</option>
+              <option value="ยโสธร">ยโสธร</option>
+              <option value="ร้อยเอ็ด ">ร้อยเอ็ด</option>
+              <option value="เลย ">เลย</option>
+              <option value="ศรีสะเกษ ">ศรีสะเกษ</option>
+              <option value="สกลนคร">สกลนคร</option>
+              <option value="สุรินทร์ ">สุรินทร์</option>
+              <option value="มุกดาหาร "> มุกดาหาร</option>
+              <option value="หนองบัวลำภู ">หนองบัวลำภู</option>
+              <option value="อุดรธานี "> อุดรธานี</option>
+              <option value="อุบลราชธานี ">อุบลราชธานี</option>
+              <option value="อำนาจเจริญ ">อำนาจเจริญ</option>
+              <option value="กำแพงเพชร ">กำแพงเพชร</option>
+              <option value="ชัยนาท ">ชัยนาท</option>
+              <option value="นครนายก ">นครนายก</option>
+              <option value="นครปฐม ">นครปฐม</option>
+              <option value="นครสวรรค์ "> นครสวรรค์</option>
+              <option value="นนทบุรี ">นนทบุรี</option>
+              <option value="ปทุมธานี ">ปทุมธานี</option>
+              <option value="พระนครศรีอยุธยา ">พระนครศรีอยุธยา</option>
+              <option value="พิจิตร ">พิจิตร</option>
+              <option value="พิษณุโลก "> พิษณุโลก</option>
+              <option value="เพชรบูรณ์ "> เพชรบูรณ์</option>
+              <option value="ลพบุรี ">ลพบุรี</option>
+              <option value="สมุทรปราการ ">สมุทรปราการ</option>
+              <option value="สมุทรสงคราม "> สมุทรสงคราม</option>
+              <option value="สมุทรสาคร ">สมุทรสาคร</option>
+              <option value="สระบุรี ">สระบุรี</option>
+              <option value="สิงห์บุรี "> สิงห์บุรี</option>
+              <option value="สุโขทัย ">สุโขทัย</option>
+              <option value="สุพรรณบุรี ">สุพรรณบุรี</option>
+              <option value="อ่างทอง ">อ่างทอง</option>
+              <option value="อุทัยธานี "> อุทัยธานี</option>
+              <option value="จันทบุรี ">จันทบุรี</option>
+              <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+              <option value="ชลบุรี">ชลบุรี</option>
+              <option value="ตราด ">ตราด</option>
+              <option value="ปราจีนบุรี ">ปราจีนบุรี</option>
+              <option value="ระยอง "> ระยอง</option>
+              <option value="สระแก้ว ">สระแก้ว</option>
+              <option value="กาญจนบุรี ">กาญจนบุรี</option>
+              <option value="ตาก ">ตาก</option>
+              <option value="	ประจวบคีรีขันธ์ ">ประจวบคีรีขันธ์</option>
+              <option value="เพชรบุรี ">เพชรบุรี</option>
+              <option value="ราชบุรี ">ราชบุรี</option>
+              <option value="กระบี่ ">กระบี่</option>
+              <option value="ชุมพร ">ชุมพร</option>
+              <option value="ตรัง ">ตรัง</option>
+              <option value="นครศรีธรรมราช ">นครศรีธรรมราช</option>
+              <option value="นราธิวาส ">นราธิวาส</option>
+              <option value="ปัตตานี ">ปัตตานี</option>
+              <option value="พังงา ">พังงา</option>
+              <option value="พัทลุง ">พัทลุง</option>
+              <option value="ภูเก็ต ">ภูเก็ต</option>
+              <option value="ยะลา ">ยะลา</option>
+              <option value="ระนอง ">ระนอง</option>
+              <option value="สตูล ">สตูล</option>
+              <option value="สงขลา "> สงขลา</option>
+              <option value="สุราษฎร์ธานี ">สุราษฎร์ธานี</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label>หมายเลขทะเบียนรถ</label>
+            <input type="text" class="form-control" id="countryy" placeholder="" required></div>
+        </div>
+        <label>ป้ายทะเบียนสี</label>
+        <div class="row">
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> ขาว</div>
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> เหลือง</div>
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> เขียว</div>
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> แดง</div>
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> ฟ้า</div>
+          <div class="col-md-2">
+            <input type="radio" name="coler" required /> อื่นๆ
+            <input type=" text" name="coler" class="form-control" placeholder="อื่นๆ"> </div>
+        </div>
+
+
+        <hr>
+        <div class="mb-3">
+          <label>กระทำผิดฐาน</label>
+          <br> <label>๑ การขับรถ</label>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> ฝ่าฝืนไฟจราจรสีแดง</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> ฝ่าฝืนเครื่องหมายบนพื้นทาง</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> ฝ่าฝืนเครื่องหมายจราจรห้าม</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> ไม่ใกล้ขอบทางเดินรถด้านซ้าย</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul1" /> แซงเมื่อเข้าที่คับขัน</div>
+          </div>
+
+
+          <label>๒ หยุดรถ</label>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul2" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul2" /> ในเขตห้ามหยุด</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul2" /> รอสัญญาณล้ำแนว</div>
+          </div>
+
+          <label>๓ จอดรถไว้</label>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> ในลักษณะกีดขวางจราจร</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> บนทางเท้า</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> ในเขตห้ามจอด</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> ไม่ชิดขอบด้านซ้าย</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> ไม่ขนานชิดขอบทาง</div>
+            <div class="col-md-3 mb-3">
+              <input type="checkbox" name="rul3" /> ซ้อนคัน</div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label>๔ อื่นๆ</label>
+              <input type=" text" name="rul3" placeholder="อื่นๆ">
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label>เหตุเกิดที่</label>
+            <label>ตรอก/ซอย</label>
+            <input type="text" class="form-control" placeholder="ตรอก/ซอย"></div>
+          <div class="col-md-4 mb-3">
+            <label>ถนน</label>
+            <input type="text" class="form-control" placeholder="ถนน" required></div>
+          <div class="col-md-4 mb-3">
+            <label>ตำบลเเขวง</label>
+            <input type=" text" class="form-control" placeholder="ตำบลเเขวง" required></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label>อำเภอ/เขต</label>
+            <input type="text" class="form-control" placeholder="อำเภอ/เขต" required></div>
+          <div class="col-md-3 mb-3">
+            <input type="radio" name="country2" required /> กรุงเทพมหานคร </div>
+          <div class="col-md-4 mb-3">
+            <input type="radio" name="country2" required /> จังหวัด
+            <select name="country" id="country" class="form-control">
+              <option value="เชียงราย">เชียงราย</option>
+              <option value="เชียงใหม่">เชียงใหม่</option>
+              <option value="น่าน">น่าน</option>
+              <option value="พะเยา">พะเยา</option>
+              <option value="แพร่">แพร่</option>
+              <option value="แม่ฮ่องสอน">แม่ฮ่องสอน</option>
+              <option value="ลำปาง ">ลำปาง</option>
+              <option value="ลำพูน ">ลำพูน</option>
+              <option value="อุตรดิตถ์ ">อุตรดิตถ์</option>
+              <option value="กาฬสินธุ์ ">กาฬสินธุ์</option>
+              <option value="ขอนแก่น ">ขอนแก่น</option>
+              <option value="ชัยภูมิ ">ชัยภูมิ</option>
+              <option value="นครพนม ">นครพนม</option>
+              <option value="นครราชสีมา ">นครราชสีมา</option>
+              <option value="บึงกาฬ">บึงกาฬ</option>
+              <option value="บุรีรัมย์">บุรีรัมย์</option>
+              <option value="มหาสารคาม ">มหาสารคาม</option>
+              <option value="มุกดาหาร"> มุกดาหาร</option>
+              <option value="ยโสธร">ยโสธร</option>
+              <option value="ร้อยเอ็ด ">ร้อยเอ็ด</option>
+              <option value="เลย ">เลย</option>
+              <option value="ศรีสะเกษ ">ศรีสะเกษ</option>
+              <option value="สกลนคร">สกลนคร</option>
+              <option value="สุรินทร์ ">สุรินทร์</option>
+              <option value="มุกดาหาร "> มุกดาหาร</option>
+              <option value="หนองบัวลำภู ">หนองบัวลำภู</option>
+              <option value="อุดรธานี "> อุดรธานี</option>
+              <option value="อุบลราชธานี ">อุบลราชธานี</option>
+              <option value="อำนาจเจริญ ">อำนาจเจริญ</option>
+              <option value="กำแพงเพชร ">กำแพงเพชร</option>
+              <option value="ชัยนาท ">ชัยนาท</option>
+              <option value="นครนายก ">นครนายก</option>
+              <option value="นครปฐม ">นครปฐม</option>
+              <option value="นครสวรรค์ "> นครสวรรค์</option>
+              <option value="นนทบุรี ">นนทบุรี</option>
+              <option value="ปทุมธานี ">ปทุมธานี</option>
+              <option value="พระนครศรีอยุธยา ">พระนครศรีอยุธยา</option>
+              <option value="พิจิตร ">พิจิตร</option>
+              <option value="พิษณุโลก "> พิษณุโลก</option>
+              <option value="เพชรบูรณ์ "> เพชรบูรณ์</option>
+              <option value="ลพบุรี ">ลพบุรี</option>
+              <option value="สมุทรปราการ ">สมุทรปราการ</option>
+              <option value="สมุทรสงคราม "> สมุทรสงคราม</option>
+              <option value="สมุทรสาคร ">สมุทรสาคร</option>
+              <option value="สระบุรี ">สระบุรี</option>
+              <option value="สิงห์บุรี "> สิงห์บุรี</option>
+              <option value="สุโขทัย ">สุโขทัย</option>
+              <option value="สุพรรณบุรี ">สุพรรณบุรี</option>
+              <option value="อ่างทอง ">อ่างทอง</option>
+              <option value="อุทัยธานี "> อุทัยธานี</option>
+              <option value="จันทบุรี ">จันทบุรี</option>
+              <option value="ฉะเชิงเทรา">ฉะเชิงเทรา</option>
+              <option value="ชลบุรี">ชลบุรี</option>
+              <option value="ตราด ">ตราด</option>
+              <option value="ปราจีนบุรี ">ปราจีนบุรี</option>
+              <option value="ระยอง "> ระยอง</option>
+              <option value="สระแก้ว ">สระแก้ว</option>
+              <option value="กาญจนบุรี ">กาญจนบุรี</option>
+              <option value="ตาก ">ตาก</option>
+              <option value="	ประจวบคีรีขันธ์ ">ประจวบคีรีขันธ์</option>
+              <option value="เพชรบุรี ">เพชรบุรี</option>
+              <option value="ราชบุรี ">ราชบุรี</option>
+              <option value="กระบี่ ">กระบี่</option>
+              <option value="ชุมพร ">ชุมพร</option>
+              <option value="ตรัง ">ตรัง</option>
+              <option value="นครศรีธรรมราช ">นครศรีธรรมราช</option>
+              <option value="นราธิวาส ">นราธิวาส</option>
+              <option value="ปัตตานี ">ปัตตานี</option>
+              <option value="พังงา ">พังงา</option>
+              <option value="พัทลุง ">พัทลุง</option>
+              <option value="ภูเก็ต ">ภูเก็ต</option>
+              <option value="ยะลา ">ยะลา</option>
+              <option value="ระนอง ">ระนอง</option>
+              <option value="สตูล ">สตูล</option>
+              <option value="สงขลา "> สงขลา</option>
+              <option value="สุราษฎร์ธานี ">สุราษฎร์ธานี</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="Date">วันที่</label>
+            <input type="date" id="Date" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="At">เวลา</label>
+            <input type="time" id="At" required>
+          </div>
+        </div>
+
+        <hr>
+        <div class="mb-3">
+          อาศัยอำนาจตามความในมาตรา๑๔๐ วรรคหนึ่ง เเห่ง พ.ร.บ.จราจรทางบก พ.ศ.๒๕๒๒ ซึ่งเเก้ใขเพิ่มเติมโดย
+          พ.ร.บ.จราจรทางบก(ฉบับที่๘)พ.ศ.๒๕๕๗ เเละมาตรา๑๔๑ เเห่ง พ.ร.บจราจรทางบก พ.ศ.๒๕๒๒
+          ซึ่งเเก้ใขเพิ่มเติมโดย พ.ร.บ.จราจรทางบก(ฉบับที่๑๑) พ.ศ.๒๕๕๙
+          ให้ผู้ขับขี่เหรือเจ้าของรถหรือผู้ครอบครองรถไปชำระค่าปรับตามข้อกำหนดของสำนักงานตำรวจเเห่งชาติ
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label>จำนวนเงิน</label>
+            <input type="number" class="form-control" placeholder="บาท" required></div>
+          <div class="col-md-4 mb-3">
+            <label>ณ สถานีตำรวจ</label>
+            <input type="text" class="form-control" placeholder="สถานีตำรวจ" required></div>
+        </div>
+
+        <div class="mb-3">
+          <label>ลงชื่อผู้ออกใบสั่ง</label>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label>ยศ</label>
+              <input type="text" class="form-control" placeholder="ยศ" required> </div>
+            <div class="col-md-3 mb-3">
+              <label>ชื่อ</label>
+              <input type="text" class="form-control" placeholder="ชื่อ" required> </div>
+            <div class="col-md-3 mb-3">
+              <label>ชื่อสกุล</label>
+              <input type=" text" class="form-control" placeholder="ชื่อสกุล" required> </div>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="polic1" name="polic" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="polic1">เจ้าพนักงานจราจร</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="polic2" name="polic" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="polic2">พนักงานเจ้าหน้าที่</label> <br>
+                <label for="polic2">รหัส</label>
+                <input type="number" class="form-control" id="polic2" placeholder="รหัสพนักงานเจ้าหน้าที่" required>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+        <div class="text-center">
+          <h3>ใบรับเเทนใบอนุญาตขับขี่</h3>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>ชื่อผู้ขับขี่</label>
+            <input type="text" class="form-control" placeholder="ชื่อผู้ขับขี่" required> </div>
+          <div class="col-md-6 mb-3">
+            <label>เลขประจำตัวประชาชน</label>
+            <input type="number" class="form-control" placeholder="เลขประจำตัวประชาชน" required> </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label>ใบอนุญาตขับขี่เลขที่/ฉบับที่</label>
+            <input type="number" class="form-control" placeholder="ใบอนุญาตขับขร่เลขที่/ฉบับที่" required> </div>
+          <div class="col-md-6 mb-3">
+            <label>วันอนุญาต</label>
+            <input type="date" class="form-control" placeholder="วันอนุญาต" required> </div>
+        </div>
+
+
+
+        <label>ออกให้โดยนายทะเบียน</label>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <input type="radio" id="branch1" name="branch" required /> กรุงเทพมหานคร
+            <input type="text" id="branch1" class="form-control" placeholder="สาขา" required> </div>
+          <div class="col-md-6 mb-3">
+            <input type="radio" id="branch2" name="branch" required /> จังหวัด
+            <input type="text" id="branch2" class="form-control" placeholder="สาขา" required></div>
+        </div>
+
+        <label>ใบขับขี่</label>
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license" required /> รถจักรยานยนต์ </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license" required /> รถสามล้อ </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license" required /> รถยนต์ </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license" required /> รถขนส่ง </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license" required /> รถอื่นๆ
+            <input type="text" class="form-control" placeholder="รถอื่นๆ"></div>
+        </div>
+
+        <label>ชนิด</label>
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> ชั่วคราว </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> ตลอดชีพ </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> สาธารณะ </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> บุคคล </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> ทุกประเภท </div>
+          <div class="col-md-2 mb-3">
+            <input type="radio" name="license2" required /> ระหว่างประเทศ </div>
+
+        </div>
+
+        <hr>
+        <div class="mb-3">
+          ข้าพเจ้าผู้ออกใบสั่งฉบับนี้ได้เรียกเก็บใบอนุญาตขับขี่ไว้ เเละให้ใช้เป็นใบเเทนใบอนุญาตขับขี่เป็นการชั่วคราว
+          ไม่เกิน 7 วัน
+          นับเเต่วันที่ออกไปรับเเทนใบอนุญาตขับขี่นี้
+        </div>
+
+        <div class="mb-3">
+          <label>ลงชื่อผู้ออกใบสั่ง</label>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label>ชื่อ</label>
+              <input type="text" class="form-control" placeholder="ลงชื่อผู้ออกใบสั่ง" required> </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label>ยศ</label>
+              <input type="text" class="form-control" placeholder="ยศ" required> </div>
+            <div class="col-md-3 mb-3">
+              <label>ชื่อ</label>
+              <input type=" text" class="form-control" placeholder="ชื่อ" required> </div>
+            <div class="col-md-3 mb-3">
+              <label>ชื่อสกุล</label>
+              <input type=" text" class="form-control" placeholder="ชื่อสกุล" required> </div>
+            <div class="col-md-3 mb-3">
+              <label for="codes">รหัส</label>
+              <input type="number" class="form-control" id="codes" placeholder="รหัสพนักงานเจ้าหน้าที่" required></div>
+          </div>
+        </div>
+
+
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2020 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+  </div>
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
